@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SecurityAuditReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "iam:Get*",
+        "iam:List*",
+        "cloudtrail:Get*",
+        "cloudtrail:DescribeTrails",
+        "cloudtrail:List*",
+        "cloudtrail:LookupEvents",
+        "guardduty:Get*",
+        "guardduty:List*",
+        "config:Get*",
+        "config:Describe*",
+        "securityhub:Get*",
+        "securityhub:List*",
+        "cloudwatch:Get*",
+        "cloudwatch:Describe*",
+        "logs:Get*",
+        "logs:Describe*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
